@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ucapan Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: Britannic, sans-serif;
+			background-image: url('4097436.jpg'); /* Ganti dengan URL atau path gambar background Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 30px;
+            color: #000;
+        }
+
+        h1 {
+            font-family: Goudy Stout, sans-serif;
+            color: #D96471 ;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            -webkit-text-stroke: 2px black; /* Stroke teks untuk browser WebKit (Safari, Chrome) */
+            text-stroke: 2px black; /* Stroke teks standar */
+        }
+		
+		h2, h3, h4, h5, h6 {
+            font-family: Britannic, sans-serif;
+        }
+
+        .birthday-message {
+            color: #0E0E0E ;
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold; /* Efek tebal pada teks */
+        }
+
+        .love-symbol {
+            font-size: 48px;
+            color: #FF1493;
+        }
+
+        .question {
+            margin-top: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #FB0404 ; /* Warna latar belakang tombol */
+            color: #fff; /* Warna teks tombol */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; /* Sudut bulat pada tombol */
+            transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Warna latar belakang saat dihover */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+		audio {
+            margin-top: 20px;
+        }
+
+		p {
+            font-size: 25px; /* Adjust the font size for the specific paragraph */
+            margin-bottom: 20px; /* Add some margin below the paragraph */
+        }
+    </style>
+</head>
+<body>
+     <div id="page1">
+        <h1>Happy Birthday Ahmad Adam!</h1>
+        <div class="button-container">
+		<img src="a.jpg" alt="Your Image" width="200"> <!-- Add your image here -->
+            <p>Surprise, tekan dulu button tuu hehe</p>
+            <button class="button" onclick="showPage2()">MUAHHHHHH</button>
+            
+        </div>
+    </div>
+
+    <div id="page2" style="display: none;">
+        <div class="question">
+			<img src="bb.jpg" alt="Birthday Cake" width="200">
+			<p>Cakap "I love you" duluuuuuuu?</p>
+            <button class="button" onclick="showBirthdayMessage()">I Love You</button>
+            <button class="button" onclick="repeatQuestion()">Taknak lahhhhhh</button>
+        </div>
+    </div>
+
+    <div id="page3" style="display: none;">
+        <p class="birthday-message">Happy Birthday Adam Sayang yang ke - 21!</p>
+        <!--<img src="fd4f4caf65fd1fcf1692009dcc371c66.jpg" alt="Birthday Cake" width="200">-->
+		<!--<img src="a.jpg" alt="Birthday Cake" width="200">-->
+		
+		<img src="c.jpg" alt="Birthday Cake" width="200">
+        <p class="birthday-message">Happy birthday awaknya, saya doakan awak panjang umur dan dimurahkan rezeki dan dijodohkan dengan saya hehe. Terima kasih sbb selalu ada dengan saya tau. Awaklah orang satu-satunya bagi saya. Maafkan saya kalau saya annoying ke keras kepala. Hidup saya sendu je tapi lepas awak ada dalam hidup saya, saya happy sangat. Saya harap kita akan always berjumpa, berborak, dan saya harap awak still sayangkan saya walaupun awak tak cakap. Saya sayang awak sangat-sangat tau. Apa apa pun, jangan lupa saya dan saya doakan urusan awak dipermudahkan. Kita dekan and ANC sama sama kali ini. Saya janji hehe. Last, Happy birthday sayang, I love you so much, kekal hensem and sentiasa sayang dan suka saya tau. I hope that huhu. Thank you for 3 year relationship. Sayang awak Adam saya ^-^</p>
+		<p class="birthday-message">Dari sayangmu, Didi Nataya. </p>
+		<audio controls autoplay>
+    <source src="lagu.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    </div>
+
+    <script>
+        function showPage2() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+        }
+
+        function showBirthdayMessage() {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page3').style.display = 'block';
+        }
+
+        function repeatQuestion() {
+            alert("Sampai hati tekan taknak, pang karang!! Takde kena cakap I Love you jugaaaa");
+        }
+    </script>
+</body>
+</html>
+
